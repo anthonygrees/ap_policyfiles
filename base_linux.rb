@@ -10,10 +10,10 @@ name 'base_linux'
 default_source :chef_server, "https://#{ENV['AUTOMATE_HOSTNAME']}/organizations/#{ENV['CHEF_ORG']}"
 
 # Specify a custom source for a cookbook:
-cookbook 'chef-client'
-# cookbook 'chef-client', 'audit-agr'
+cookbook 'chef-client', '~> 10.2.2'
+# cookbook 'audit_agr', '~> 2.2.4' ## Stage 2
 
 # run_list: chef-client will run these recipes in the order specified.
-run_list 'chef-client'
+run_list 'chef-client' ## Stage 1
 
 # run_list 'chef-client', 'audit_agr'  ## Stage 2
