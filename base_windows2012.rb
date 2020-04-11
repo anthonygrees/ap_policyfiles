@@ -1,10 +1,10 @@
-# base_windows.rb - Describe how you want Chef to build your system.
+# base_windows2012.rb - Describe how you want Chef to build your system.
 #
 # For more information on the Policyfile feature, visit
 # https://github.com/opscode/chef-dk/blob/master/POLICYFILE_README.md
 # A name that describes what the system you're building with Chef does.
 
-name 'base_windows'
+name 'base_windows2012'
 
 # Where to find external cookbooks:
 default_source :chef_server, "https://#{ENV['AUTOMATE_HOSTNAME']}/organizations/#{ENV['CHEF_ORG']}"
