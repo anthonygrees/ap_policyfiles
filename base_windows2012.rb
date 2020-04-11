@@ -12,8 +12,8 @@ default_source :chef_server, "https://#{ENV['AUTOMATE_HOSTNAME']}/organizations/
 # Specify a custom source for a cookbook:
 cookbook 'chef-client', '~> 10.2.2'  ## Stage 1 - Base
 cookbook 'audit_agr', '~> 2.2.4'   ## Stage 2 - Detect
-cookbook 'cis-win2012r2-l1-hardening-cookbook', '~> 0.1.1'  ## Stage 3 - Correct
+cookbook 'cis-win2012r2-l1-hardening', '~> 0.1.1'  ## Stage 3 - Correct
 
 # run_list: chef-client will run these recipes in the order specified.
 
-run_list 'chef-client', 'audit_agr', 'cis-win2012r2-l1-hardening-cookbook'  ## Stage 3
+run_list 'chef-client', 'audit_agr', 'cis-win2012r2-l1-hardening'  ## Stage 3
