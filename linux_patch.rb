@@ -11,11 +11,11 @@ default_source :chef_server, "https://#{ENV['AUTOMATE_HOSTNAME']}/organizations/
 
 # Specify a custom source for a cookbook:
 cookbook 'chef-client', '~> 10.2.2' ## Stage 1
-# cookbook 'audit_patch', '~> 2.2.4' ## Stage 1 - Check Patch Level with InSpec
-# cookbook 'ubuntu_patch', '~> 0.3.1'  ## Stage 2 - Apply Patch with Chef
+# cookbook 'audit_patch', '~> 0.1.0' ## Stage 1 - Check Patch Level with InSpec
+# cookbook 'ap_ubuntu_patch', '~> 0.1.0'  ## Stage 2 - Apply Patch with Chef
 
 # run_list: chef-client will run these recipes in the order specified.
 
 # run_list 'chef-client', 'audit_patch'  ## Stage 1
 
-# run_list 'chef-client', 'audit_patch', 'ubuntu_patch'  ## Stage 2
+# run_list 'chef-client', 'audit_patch', 'ap_ubuntu_patch'  ## Stage 2
