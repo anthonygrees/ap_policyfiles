@@ -1,13 +1,8 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+# trigger: master
+trigger: 
+- ado_pipeline
 
-trigger:
-- master
-
-pool:
-  vmImage: 'ubuntu-latest'
+pool: default
 
 steps:
 - script: echo Hello, world!
