@@ -9,8 +9,6 @@ steps:
   displayName: 'Print Directory Content'
 - script: pwd
   displayName: 'Server Directory Location'
-- script: export AUTOMATE_HOSTNAME='anthony-a2.chef-demo.com' && export CHEF_ORG='reesyorg'
-  displayName: 'Set Local Variables'
 - script: env
   displayName: 'Available Env Variables'
 - script: ./policy_push.sh
