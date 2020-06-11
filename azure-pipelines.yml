@@ -11,5 +11,9 @@ steps:
   displayName: 'Server Directory Location'
 - script: env
   displayName: 'Available Env Variables'
+- script: chef show-policy
+  displayName: 'Show Policy - Before'
 - script: ./policy_push.sh
   displayName: 'Upload Policy to Chef Server'
+- script: chef show-policy
+  displayName: 'Show Policy - After'
