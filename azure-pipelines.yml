@@ -6,8 +6,10 @@ pool: default
 
 steps:
 - script: ls
-  displayName: 'What is in the directory'
+  displayName: 'Print Directory Content'
 - script: pwd
-  displayName: 'Where are we !'
+  displayName: 'Server Directory Location'
 - script: env
-  displayName: 'env vars'
+  displayName: 'Available Env Variables'
+- script: ./policy_push.sh
+  displayName: 'Upload Policy to Chef Server'
