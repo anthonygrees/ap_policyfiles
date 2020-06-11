@@ -1,5 +1,6 @@
 # trigger: master
-trigger: ado_pipeline
+trigger: 
+- ado_pipeline
 
 pool: default
 
