@@ -16,6 +16,6 @@ cookbook 'ap_ubuntu_patch', '~> 0.1.0'  ## Stage 2 - Apply Patch with Chef
 
 # run_list: chef-client will run these recipes in the order specified.
 
-# run_list 'chef-client', 'audit_patch'  ## Stage 1
+run_list 'chef-client', 'audit_patch'  ## Stage 1
 
-run_list 'chef-client', 'audit_patch', 'ap_ubuntu_patch'  ## Stage 2
+# run_list 'chef-client', 'audit_patch', 'ap_ubuntu_patch'  ## Stage 2
