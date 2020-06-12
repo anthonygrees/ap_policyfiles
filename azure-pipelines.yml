@@ -17,3 +17,5 @@ steps:
   displayName: 'Upload Policy to Chef Server'
 - script: chef show-policy
   displayName: 'Show Policy - After'
+- script: chef show-policy linux_patch development
+  displayName: 'Show Policy - Patching'
