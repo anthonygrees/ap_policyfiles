@@ -19,3 +19,7 @@ cookbook 'audit_patch', '~> 0.1.0' ## Stage 1 - Check Patch Level with InSpec
 run_list 'chef-client', 'audit_patch'  ## Stage 1
 
 # run_list 'chef-client', 'audit_patch', 'ap_ubuntu_patch'  ## Stage 2
+
+# Override the Chef Client cookbook with the following attributes
+override['chef_client']['interval']    = '60'
+override['chef_client']['splay']       = '5'
