@@ -10,7 +10,7 @@ name 'base_linux'
 default_source :chef_server, "https://#{ENV['AUTOMATE_HOSTNAME']}/organizations/#{ENV['CHEF_ORG']}"
 
 # Specify a custom source for a cookbook:
-cookbook 'chef-client', '~> 10.2.2' ## Stage 1 - Base
+cookbook 'chef-client', '~> 12.2.0' ## Stage 1 - Base
 cookbook 'audit_agr', '~> 2.2.4' ## Stage 2 - Detect
 cookbook 'cis-rhel', '~> 0.3.1'  ## Stage 3 - Correct
 
