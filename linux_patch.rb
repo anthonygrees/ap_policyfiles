@@ -10,7 +10,7 @@ name 'linux_patch'
 default_source :chef_server, "https://#{ENV['AUTOMATE_HOSTNAME']}/organizations/#{ENV['CHEF_ORG']}"
 
 # Specify a custom source for a cookbook:
-cookbook 'chef-client', '~> 10.2.2' ## Stage 1
+cookbook 'chef-client', '~> 12.2.0' ## Stage 1
 cookbook 'audit_patch', '~> 0.1.0' ## Stage 1 - Check Patch Level with InSpec
 cookbook 'ap_ubuntu_patch', '~> 0.1.0'  ## Stage 2 - Apply Patch with Chef
 
