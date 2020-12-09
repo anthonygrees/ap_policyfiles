@@ -17,6 +17,6 @@ cookbook 'cis-rhel', '~> 0.3.1'  ## Stage 3 - Correct
 # run_list: chef-client will run these recipes in the order specified.
 #run_list 'chef-client' ## Stage 1
 
-run_list 'chef-client', 'audit_agr'  ## Stage 2
+# run_list 'chef-client', 'audit_agr'  ## Stage 2
 
-# run_list 'chef-client', 'audit_agr', 'cis-rhel'  ## Stage 3
+run_list 'chef-client', 'audit_agr', 'cis-rhel'  ## Stage 3
