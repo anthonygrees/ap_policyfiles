@@ -7,7 +7,7 @@
 name 'base_linux'
 
 # Where to find external cookbooks:
-default_source :chef_server, "https://#{ENV['AUTOMATE_HOSTNAME']}/organizations/#{ENV['CHEF_ORG']}"
+default_source :chef_server, "https://anthony-chefdemo.kikeyama.com/organizations/reesyorg"
 
 # Specify a custom source for a cookbook:
 cookbook 'chef-client', '~> 12.2.0' ## Stage 1 - Base
